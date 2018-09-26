@@ -11,8 +11,8 @@ jobs:
       - run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASS
 
-          docker build -t labsai/alpine-java11:b$CIRCLE_BUILD_NUM .
-          docker push labsai/alpine-java11:b$CIRCLE_BUILD_NUM
+          docker build -t labsai/base-image:b$CIRCLE_BUILD_NUM .
+          docker push labsai/base-image:b$CIRCLE_BUILD_NUM
 
-          docker build -t labsai/alpine-java11:latest .
-          docker push labsai/alpine-java11:latest
+          docker build -t labsai/base-image:latest .
+          docker push labsai/base-image:latest
