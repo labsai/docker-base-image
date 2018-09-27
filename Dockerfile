@@ -18,4 +18,4 @@ ENV PATH="$JAVA_HOME/bin:${PATH}"
 
 RUN rm -rf *.tar.gz
 
-COPY ld-musl-x86_64.path /etc/ld-musl-x86_64.pat
+COPY ld-musl-x86_64.pat /etc/ld-musl-x86_64.pat
