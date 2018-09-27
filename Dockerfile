@@ -4,7 +4,7 @@ MAINTAINER labsai
 
 USER root
 
-RUN wget https://download.java.net/java/GA/jdk11/28/GPL/openjdk-11+28_linux-x64_bin.tar.gz
+RUN wget https://download.java.net/java/early_access/alpine/28/binaries/openjdk-11+28_linux-x64-musl_bin.tar.gz
 
 RUN tar -xzvf *.tar.gz
 
