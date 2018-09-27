@@ -1,7 +1,7 @@
 FROM alpine:3.8
 
-RUN apk update
-RUN apk add --no-cache bash
+RUN /bin/sh -c "apk update"
+RUN /bin/sh -c "apk add --no-cache bash"
 
 RUN mkdir /opt; cd /opt; \
     wget https://download.java.net/java/GA/jdk11/28/GPL/openjdk-11+28_linux-x64_bin.tar.gz \
