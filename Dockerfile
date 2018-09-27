@@ -19,3 +19,7 @@ ENV PATH="$JAVA_HOME/bin:${PATH}"
 RUN rm -rf *.tar.gz
 
 COPY ld-musl-x86_64.pat /etc/ld-musl-x86_64.pat
+
+RUN apk update
+
+RUN apk add --no-cache bash
