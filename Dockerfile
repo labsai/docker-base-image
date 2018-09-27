@@ -8,5 +8,8 @@ RUN mkdir /opt; cd /opt; \
     && tar zxf openjdk-11+28_linux-x64_bin.tar.gz \
     && ln -s jdk-11 java \
     && rm -f openjdk-11+28_linux-x64_bin.tar.gz
+    
+RUN chmod +x /opt/java
+
 ENV JAVA_HOME=/opt/java
 ENV PATH="$PATH:$JAVA_HOME/bin"
