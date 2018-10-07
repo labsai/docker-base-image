@@ -16,4 +16,6 @@ RUN wget https://download.java.net/java/early_access/alpine/28/binaries/openjdk-
 ENV JAVA_HOME=/usr/local/share/jdk-11
 ENV PATH="$JAVA_HOME/bin:${PATH}"
 
+RUN java -Xshare:dump;
+
 COPY ld-musl-x86_64.pat /etc/ld-musl-x86_64.pat
