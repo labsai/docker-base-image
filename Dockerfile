@@ -8,6 +8,7 @@ RUN wget https://download.java.net/java/early_access/alpine/28/binaries/openjdk-
     tar -xzvf *.tar.gz && \
     chmod +x jdk-11 && \
     mv jdk-11 /usr/local/share && \
+    rm /usr/local/share/jdk-11/lib/src.zip && \
     rm -rf *.tar.gz && \
     apk update && \
     apk add --no-cache bash
