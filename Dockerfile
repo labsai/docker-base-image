@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine-slim
+FROM adoptopenjdk/openjdk11:jre-11.0.3_7-alpine
 
 MAINTAINER labsai
 
