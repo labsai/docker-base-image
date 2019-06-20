@@ -6,6 +6,7 @@ USER root
 
 RUN apk update && \
         apk add --no-cache bash && \
-        apk add --no-cache nano
+        apk add --no-cache nano && \
+        apk add --no-cache curl
 
 RUN java -Xshare:dump;
