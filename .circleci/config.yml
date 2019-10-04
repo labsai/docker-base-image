@@ -11,8 +11,8 @@ jobs:
       - run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASS
 
-          docker build -t labsai/base-image:b$CIRCLE_BUILD_NUM .
-          docker push labsai/base-image:b$CIRCLE_BUILD_NUM
+          docker build -t labsai/base-image:redhat-b$CIRCLE_BUILD_NUM .
+          docker push labsai/base-image:redhat-b$CIRCLE_BUILD_NUM
 
-          docker build -t labsai/base-image:latest .
-          docker push labsai/base-image:latest
+          docker build -t labsai/base-image:redhat-latest .
+          docker push labsai/base-image:redhat-latest

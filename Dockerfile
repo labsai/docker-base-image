@@ -1,12 +1,8 @@
-FROM adoptopenjdk/openjdk12:jre-12.0.1_12-alpine
+FROM registry.redhat.io/openjdk/openjdk-11-rhel8:1.0-13
 
 MAINTAINER labsai
 
 USER root
 
-RUN apk update && \
-        apk add --no-cache bash && \
-        apk add --no-cache nano && \
-        apk add --no-cache curl
-
-RUN java -Xshare:dump;
+RUN yum update -y && \
+    yum install -y nano
