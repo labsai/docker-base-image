@@ -9,7 +9,7 @@ jobs:
       - setup_remote_docker
 
       - run: |
-          docker login -u $DOCKER_USER -p $DOCKER_PASS
+          docker login -u $REDHAT_USER -p $REDHAT_PASS registry.redhat.io
 
           docker build -t labsai/base-image:redhat-b$CIRCLE_BUILD_NUM .
           docker push labsai/base-image:redhat-b$CIRCLE_BUILD_NUM
