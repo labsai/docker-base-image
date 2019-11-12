@@ -1,4 +1,5 @@
-FROM adoptopenjdk/openjdk12:jre-12.0.1_12-alpine
+FROM adoptopenjdk/openjdk12:x86_64-alpine-jre-12.0.2_10
+
 
 MAINTAINER labsai
 
