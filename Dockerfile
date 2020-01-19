@@ -1,4 +1,4 @@
-FROM registry.redhat.io/openjdk/openjdk-11-rhel8:1.1-3
+FROM registry.redhat.io/openjdk/openjdk-11-rhel8:1.2-1
 
 MAINTAINER labsai
 
